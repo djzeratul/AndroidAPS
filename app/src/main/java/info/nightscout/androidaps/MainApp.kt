@@ -80,7 +80,7 @@ class MainApp : DaggerApplication() {
     @Inject lateinit var uel: UserEntryLogger
     @Inject lateinit var alarmSoundServiceHelper: AlarmSoundServiceHelper
     @Inject lateinit var notificationStore: NotificationStore
-    @Inject lateinit var processLifecycleListener: ProcessLifecycleListener
+    @Inject lateinit var processLifecycleListener: Provider<ProcessLifecycleListener>
     @Inject lateinit var profileSwitchPlugin: ThemeSwitcherPlugin
     @Inject lateinit var localAlertUtils: LocalAlertUtils
     @Inject lateinit var rh: Provider<ResourceHelper>
@@ -94,7 +94,6 @@ class MainApp : DaggerApplication() {
         RxDogTag.install()
         setRxErrorHandler()
         LocaleHelper.update(this)
-        ProcessLifecycleOwner.get().lifecycle.addObserver(processLifecycleListener)
 
         var gitRemote: String? = BuildConfig.REMOTE
         var commitHash: String? = BuildConfig.HEAD
@@ -140,10 +139,10 @@ class MainApp : DaggerApplication() {
             }, 10000
         )
         WorkManager.getInstance(this).enqueueUniquePeriodicWork(
-            "KeepAlive",
+            KeepAliveWorker.KA_0,
             ExistingPeriodicWorkPolicy.REPLACE,
             PeriodicWorkRequest.Builder(KeepAliveWorker::class.java, 15, TimeUnit.MINUTES)
-                .setInputData(Data.Builder().putString("schedule", "KeepAlive").build())
+                .setInputData(Data.Builder().putString("schedule", KeepAliveWorker.KA_0).build())
                 .setInitialDelay(5, TimeUnit.SECONDS)
                 .build()
         )
@@ -151,6 +150,7 @@ class MainApp : DaggerApplication() {
         localAlertUtils.preSnoozeAlarms()
         doMigrations()
         uel.log(UserEntry.Action.START_AAPS, UserEntry.Sources.Aaps)
+        ProcessLifecycleOwner.get().lifecycle.addObserver(processLifecycleListener.get())
 
         //  schedule widget update
         refreshWidget = Runnable {
@@ -184,7 +184,7 @@ class MainApp : DaggerApplication() {
                 Thread.currentThread().uncaughtExceptionHandler?.uncaughtException(Thread.currentThread(), e)
                 return@setErrorHandler
             }
-            aapsLogger.warn(LTag.CORE, "Undeliverable exception received, not sure what to do", e)
+            aapsLogger.warn(LTag.CORE, "Undeliverable exception received, not sure what to do", e.toString())
         }
     }
 

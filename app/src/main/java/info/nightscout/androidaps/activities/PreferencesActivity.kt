@@ -69,13 +69,14 @@ class PreferencesActivity : NoSplashAppCompatActivity(), PreferenceFragmentCompa
         super.attachBaseContext(LocaleHelper.wrap(newBase))
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+    override fun onOptionsItemSelected(item: MenuItem): Boolean =
         when (item.itemId) {
             android.R.id.home -> {
+                @Suppress("DEPRECATION")
                 onBackPressed()
-                return true
+                true
             }
+
+            else              -> super.onOptionsItemSelected(item)
         }
-        return super.onOptionsItemSelected(item)
-    }
 }

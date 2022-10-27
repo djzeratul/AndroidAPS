@@ -20,7 +20,6 @@
     <string name="disconnected">Frånkopplad</string>
     <string name="disconnecting">Kopplar från</string>
     <string name="waiting_for_disconnection">Väntar på frånkoppling</string>
-    <string name="androidaps_start">AndroidAPS startad</string>
     <string name="formatinsulinunits1">%1$.1fU</string>
     <string name="formatinsulinunits">%1$.2fU</string>
     <string name="formatsignedinsulinunits">%1$+.2f U</string>
@@ -31,7 +30,6 @@
     <string name="format_mins">%1$d min</string>
     <string name="pumpbusy">Pump upptagen</string>
     <string name="connectionerror">Anslutningsfel</string>
-    <string name="youareonallowedlimit">Du har nått din tillåtna gräns</string>
     <string name="objectives">Mål</string>
     <string name="close">Stäng</string>
     <string name="please_wait">Var god vänta…</string>
@@ -40,7 +38,6 @@
     <string name="stoppressed">Stopp nedtryckt</string>
     <string name="stop">Stopp</string>
     <string name="carbs">Kolhydrater</string>
-    <string name="invalidprofile">Ogiltig profil!</string>
     <string name="noprofileset">INGEN PROFIL VALD</string>
     <string name="active"><![CDATA[<Aktiv>]]></string>
     <string name="date">Datum</string>
@@ -53,7 +50,6 @@
     <string name="dia_long_label">Insulinets verkningstid</string>
     <string name="ic_long_label">Insulin till kolhydratförhållande</string>
     <string name="isf_long_label">Insulinkänslighetsfaktor</string>
-    <string name="basal_long_label">Basaldos</string>
     <string name="target_long_label">Mål-BG</string>
     <string name="initializing">Startar...</string>
     <string name="serialnumber">Serienummer</string>
@@ -138,7 +134,6 @@
     <string name="passwords_dont_match">Lösenorden stämmer inte överens</string>
     <!--    Profile-->
     <string name="basalprofilenotaligned">Profilens basaler är inte satta på hel timme: %1$s</string>
-    <string name="minimalbasalvaluereplaced">Basalvärdet ersatt med det lägsta tillåtna: %1$s</string>
     <string name="maximumbasalvaluereplaced">Basalvärdet ersatt med det högsta tillåtna: %1$s</string>
     <string name="profile_per_unit">/U</string>
     <string name="profile_ins_units_per_hour">U/h</string>
@@ -219,7 +214,6 @@
     <string name="waitingforpumpresult">Väntar på resultat</string>
     <string name="smb_shortname">SMB</string>
     <!--    CarbsReq-->
-    <string name="carbsreq">%1$dg KH behövs inom %2$d minuter</string>
     <!--    TDDStatsActivity-->
     <string name="stats">Statistik</string>
     <string name="cumulative_tdd">Kumulativ TDD</string>
@@ -231,7 +225,6 @@
     <string name="amount_days">Antal dagar</string>
     <string name="weight">Vikt</string>
     <string name="warning_Message">Kan visa fel om man använder bolus för förfyllning!</string>
-    <string name="olddata_Message">Gammalt data. Tryck på Hämta</string>
     <string name="tbb">Total grundbasal</string>
     <string name="tbb2">TDB * 2</string>
     <!--    Ntp-->
@@ -278,7 +271,6 @@
     <string name="versionavailable">Version %1$s tillgänglig</string>
     <string name="version_expire">Version %1$s upphör att gälla %2$s</string>
     <!-- Permissions -->
-    <string name="alert_dialog_storage_permission_text">Starta om telefonen eller AndroidAPS från systeminställningar,\nannars kommer AndroidAPS inte kunna logga fel (viktigt att kunna spåra och verifiera att algoritmerna fungerar korrekt)!</string>
     <!-- WeekdayPicker -->
     <string name="monday_short">M</string>
     <string name="tuesday_short">T</string>
@@ -394,7 +386,6 @@
     <string name="valueoutofrange">»%1$s« är utanför de hårda gränserna</string>
     <string name="value_out_of_hard_limits">»%1$s« %2$.2f är utanför hårda gränser</string>
     <string name="basal_value">Basaldos</string>
-    <string name="nsclient_version_does_not_match">NS Client-versionen matchar inte Android APS. Vänligen uppdatera.</string>
     <!-- Command Queue + readStatus reasons -->
     <string name="bolus_u_min">BOLUS %1$.2f U</string>
     <string name="carbs_g">KH %1$d g</string>

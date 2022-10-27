@@ -20,7 +20,7 @@
     <string name="disconnected">Déconnectée</string>
     <string name="disconnecting">Déconnexion en cours</string>
     <string name="waiting_for_disconnection">Attente de déconnexion</string>
-    <string name="androidaps_start">AndroidAPS est lancé</string>
+    <string name="androidaps_start">AAPS démarré</string>
     <string name="formatinsulinunits1">%1$.1f U</string>
     <string name="formatinsulinunits">%1$.2f U</string>
     <string name="formatsignedinsulinunits">%1$+.2f U</string>
@@ -31,7 +31,7 @@
     <string name="format_mins">%1$d min</string>
     <string name="pumpbusy">Pompe occupée</string>
     <string name="connectionerror">Erreur connection pompe</string>
-    <string name="youareonallowedlimit">Vous avez atteint la limite maximale</string>
+    <string name="youareonallowedlimit">Limite autorisée atteinte</string>
     <string name="objectives">Objectifs</string>
     <string name="close">Fermer</string>
     <string name="please_wait">Merci de patienter...</string>
@@ -40,7 +40,7 @@
     <string name="stoppressed">ARRÊT APPUYÉ</string>
     <string name="stop">Arrêt</string>
     <string name="carbs">Glucides</string>
-    <string name="invalidprofile">Profil incorrect !!!</string>
+    <string name="invalidprofile">Profil incorrect!</string>
     <string name="noprofileset">PAS DE PROFIL SELECTIONNÉ</string>
     <string name="active"><![CDATA[<Actif>]]></string>
     <string name="date"> Date</string>
@@ -280,7 +280,7 @@
     <string name="versionavailable">Version %1$s disponible</string>
     <string name="version_expire">La version %1$s expire le %2$s</string>
     <!-- Permissions -->
-    <string name="alert_dialog_storage_permission_text">Redémarrez votre smartphone ou redémarrez AndroidAPS depuis les paramètres système\nsinon AndroidAPS n\'aura pas de fichiers log (il est important de suivre et vérifier que les algorithmes fonctionnent correctement)!</string>
+    <string name="alert_dialog_storage_permission_text">Veuillez redémarrer votre téléphone ou redémarrer AAPS à partir des Paramètres du système\nsinon AAPS ne sera pas connecté aux journaux (important pour suivre et vérifier que les algorithmes fonctionnent correctement)!</string>
     <!-- WeekdayPicker -->
     <string name="monday_short">L</string>
     <string name="tuesday_short">M</string>
@@ -361,6 +361,7 @@
     <string name="uel_export_settings">PARAMÈTRES EXPORTÉS</string>
     <string name="uel_import_settings">PARAMÈTRES IMPORTÉS</string>
     <string name="uel_reset_databases">BASE DE DONNÉES RÉINITIALISÉE</string>
+    <string name="uel_cleanup_databases">SUPPRIMER LES DONNÉES</string>
     <string name="uel_export_databases">BASE DE DONNÉES EXPORTÉE</string>
     <string name="uel_import_databases">BASE DE DONNÉES IMPORTÉE</string>
     <string name="uel_otp_export">OTP EXPORTÉ</string>
@@ -397,7 +398,7 @@
     <string name="valueoutofrange">\"%1$s\" est en dehors des limites</string>
     <string name="value_out_of_hard_limits">\"%1$s\" %2$.2f est en dehors des limites</string>
     <string name="basal_value">Valeur de Basal</string>
-    <string name="nsclient_version_does_not_match">La version NSClient ne correspond pas à AndroidAPS. Faites une mise à jour.</string>
+    <string name="nsclient_version_does_not_match">La version AAPSClient ne correspond pas à AAPS. Faites une mise à jour.</string>
     <!-- Command Queue + readStatus reasons -->
     <string name="bolus_u_min">BOLUS %1$.2f U</string>
     <string name="carbs_g">GLUCIDES %1$d g</string>
@@ -446,7 +447,7 @@
     <string name="autotune_description">Aide pour ajuster le profil (SI, rapport G/I et débits de basal)</string>
     <string name="autotune_shortname">AT</string>
     <string name="autotune_settings">Paramètres Autotune</string>
-    <string name="autotune_auto_title">Changr le profil avec l\'automatisation</string>
+    <string name="autotune_auto_title">Changer le profil avec l\'automatisation</string>
     <string name="autotune_auto_summary">Si activé, Autotune mettra à jour automatiquement à jour le profil sélectionné et activera le profil calculé effectué à partir d\'une règle d\'automatisation.</string>
     <string name="autotune_categorize_uam_as_basal_title">Catégoriser UAM en tant que Basal</string>
     <string name="autotune_categorize_uam_as_basal_summary">Activer uniquement si vous avez correctement saisi tous les glucides consommés, avec cette option, des hausses soudaines vues par Autotune seront utilisées pour modifier les débits de basal.</string>
@@ -489,6 +490,7 @@
     <string name="autotune_run_with_autoswitch">Autotune exécuté et le profil automatiquement activé</string>
     <string name="autotune_run_with_error">Erreur lors de la dernière exécution d\'Autotune</string>
     <string name="autotune_run_cancelled">Une autre exécution d\'Autotune est détectée, l\'exécution est annulée</string>
+    <string name="needconnectpermission">L\'application a besoin de l\'autorisation Bluetooth</string>
     <plurals name="days">
         <item quantity="one">%1$d jour</item>
         <item quantity="other">%1$d jours</item>

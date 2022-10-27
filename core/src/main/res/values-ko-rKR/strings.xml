@@ -19,7 +19,6 @@
     <string name="connected">연결됨</string>
     <string name="disconnected">연결 끊김</string>
     <string name="disconnecting">연결끊기중</string>
-    <string name="androidaps_start">AndroidAPS 시작</string>
     <string name="formatinsulinunits1">%1$.1f U</string>
     <string name="formatinsulinunits">%1$.2f U</string>
     <string name="formatsignedinsulinunits">%1$+.2f U</string>
@@ -30,7 +29,6 @@
     <string name="format_mins">%1$d 분</string>
     <string name="pumpbusy">펌프가 바쁩니다</string>
     <string name="connectionerror">펌프 연결 에러</string>
-    <string name="youareonallowedlimit">허용된 제한값에 도달하였습니다</string>
     <string name="objectives">목표</string>
     <string name="close">닫기</string>
     <string name="please_wait">잠시 기다려 주세요...</string>
@@ -39,7 +37,6 @@
     <string name="stoppressed">정지 누름</string>
     <string name="stop">정지</string>
     <string name="carbs">탄수화물</string>
-    <string name="invalidprofile">프로파일이 유효하지 않습니다!!!</string>
     <string name="noprofileset">프로파일이 설정되지 않았습니다.</string>
     <string name="active"><![CDATA[<Active>]]></string>
     <string name="date">날짜</string>
@@ -131,7 +128,6 @@
     <string name="passwords_dont_match">비밀번호가 일치하지 않습니다.</string>
     <!--    Profile-->
     <string name="basalprofilenotaligned">Basal값이 시간단위로 설정되지 않았습니다: %1$s</string>
-    <string name="minimalbasalvaluereplaced">지원되는 최소값으로 Basal값이 대체되었습니다:%1$s</string>
     <string name="maximumbasalvaluereplaced">지원되는 최대값으로 Basal값이 대체되었습니다:%1$s</string>
     <string name="profile_per_unit">/U</string>
     <string name="profile_ins_units_per_hour">U/h</string>
@@ -204,7 +200,6 @@
     <string name="waitingforpumpresult">결과 기다리는 중</string>
     <string name="smb_shortname">SMB</string>
     <!--    CarbsReq-->
-    <string name="carbsreq">%2$d 분 안에 %1$d g의 추가적인 탄수화물이 요구됨</string>
     <!--    TDDStatsActivity-->
     <string name="stats">통계</string>
     <string name="cumulative_tdd">누적 일총량</string>
@@ -216,7 +211,6 @@
     <string name="amount_days">#일</string>
     <string name="weight">가중</string>
     <string name="warning_Message">교체/채움을 위해 Bolus를 사용한 경우 부정확할 수 있습니다!!</string>
-    <string name="olddata_Message">오래된 데이터입니다. \"새로고침\"을 누르세요.</string>
     <string name="tbb">총 기본 Basal</string>
     <string name="tbb2">총기초량 * 2</string>
     <!--    Ntp-->
@@ -262,7 +256,6 @@
     <string name="running_invalid_version">유효하지 않은 버전을 이용 중입니다. Loop가 비활성화 되었습니다!</string>
     <string name="versionavailable">%1$s 버전이 사용 가능합니다.</string>
     <!-- Permissions -->
-    <string name="alert_dialog_storage_permission_text">폰을 재부팅하거나 AndroidAPS를 재시작하세요 \n그렇지 않으면 로그 기록이 되지 않습니다.(알고리즘이 정상적인 작동하는지 확인하기 위해 로그가 필요합니다.)!</string>
     <!-- WeekdayPicker -->
     <string name="monday_short">월</string>
     <string name="tuesday_short">화</string>

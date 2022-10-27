@@ -43,7 +43,7 @@ def generateGitBuild = { ->
 }
 
 android {
-    compileSdkVersion 31
+    compileSdkVersion 33
 
     defaultConfig {
         minSdkVersion 23
@@ -69,15 +69,15 @@ android {
             dimension "standard"
             versionName version + "-pumpcontrol"
         }
-        nsclient {
-            applicationId "info.nightscout.nsclient"
+        aapsclient {
+            applicationId "info.nightscout.aapsclient"
             dimension "standard"
-            versionName version + "-nsclient"
+            versionName version + "-aapsclient"
         }
-        nsclient2 {
-            applicationId "info.nightscout.nsclient2"
+        aapsclient2 {
+            applicationId "info.nightscout.aapsclient2"
             dimension "standard"
-            versionName version + "-nsclient"
+            versionName version + "-aapsclient"
         }
     }
     namespace 'info.nightscout.androidaps'
@@ -101,14 +101,14 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v13:1.0.0'
     implementation "androidx.preference:preference-ktx:$preferencektx_version"
     implementation 'androidx.wear:wear:1.2.0'
-    implementation "androidx.wear.tiles:tiles:1.0.1"
+    implementation 'androidx.wear.tiles:tiles:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
     compileOnly "com.google.android.wearable:wearable:$wearable_version"
     implementation "com.google.android.support:wearable:$wearable_version"
     implementation "com.google.android.gms:play-services-wearable:$play_services_wearable_version"
-    implementation(files('libs/ustwo-clockwise-debug.aar'))
-    implementation(files('libs/wearpreferenceactivity-0.5.0.aar'))
+    implementation(files("${rootProject.rootDir}/libraries/libs/ustwo-clockwise-debug.aar"))
+    implementation(files("${rootProject.rootDir}/libraries/libs/wearpreferenceactivity-0.5.0.aar"))
     implementation('com.github.lecho:hellocharts-library:1.5.8@aar')
 
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
